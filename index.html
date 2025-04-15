@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ramy Mekhzer - AI & Computer Science Student at University of Birmingham. Portfolio showcasing projects and skills in AI, Machine Learning, and Software Development.">
+    <meta name="keywords" content="AI, Computer Science, Machine Learning, Software Development, Portfolio, University of Birmingham">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Ramy Mekhzer - AI & Computer Science Student">
+    <meta property="og:description" content="Portfolio showcasing projects and skills in AI, Machine Learning, and Software Development.">
+    <meta property="og:image" content="img/profile.jpeg">
+    <meta property="og:url" content="https://your-website-url.com">
+    
+    <title>Ramy Mekhzer - AI & Computer Science Student</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Portfolio</div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#personal-projects">Personal Projects</a></li>
+                    <li><a href="#experience">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Ramy Mekhzer</span></h1>
+                <h2>AI & Computer Science Student</h2>
+                <p>University of Birmingham | 2nd Year</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ramy-mekhzer-51b411275/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/profile.jpeg" alt="Profile Picture">
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate 2nd year AI and Computer Science student at the University of Birmingham. I'm enthusiastic about artificial intelligence, machine learning, and software development.</p>
+                    <p>Currently focusing on building a strong foundation in computer science principles and AI technologies, I'm eager to apply my knowledge through practical projects and eventually gain industry experience.</p>
+                    <p>When I'm not studying or coding, you can find me exploring new technologies, working on personal projects, and expanding my skills in various programming languages and frameworks.</p>
+                    <a href="#" class="btn primary-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-content">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Java</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">Machine Learning Fundamentals</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Data Analysis</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Neural Networks</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Git/GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Database Fundamentals</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project1.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce application with user authentication, product management, and payment integration.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project2.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A responsive task management application with drag-and-drop functionality and real-time updates.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/project3.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>A weather application that provides real-time weather data and forecasts for locations worldwide.</p>
+                        <div class="project-tech">
+                            <span>JavaScript</span>
+                            <span>Weather API</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn small-btn">View Demo</a>
+                            <a href="#" class="btn small-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="#" class="btn primary-btn">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3>BSc in AI and Computer Science</h3>
+                        <h4>University of Birmingham</h4>
+                        <p>Currently in my 2nd year, focusing on artificial intelligence, machine learning, and software development fundamentals.</p>
+                        <ul>
+                            <li>Coursework in algorithms, data structures, and AI principles</li>
+                            <li>Developing skills in Python, Java, and web technologies</li>
+                            <li>Participating in coding competitions and hackathons</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h3>Foundation Degree in Computer Science</h3>
+                        <h4>University of Birmingham</h4>
+                        <p>Completed a foundation year program focusing on core computer science principles and mathematics.</p>
+                        <ul>
+                            <li>Established strong fundamentals in programming and computer science theory</li>
+                            <li>Developed problem-solving skills through practical projects</li>
+                            <li>Prepared for advanced studies in AI and Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="personal-projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Personal Projects</h2>
+            <p class="section-description">A collection of my personal projects and achievements throughout my academic journey.</p>
+            <div class="projects-grid">
+                <!-- Birmingham Project Certificate -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="img/Birmingham project certificate.jpeg" download="Birmingham Project Certificate">
+                            <img src="img/Birmingham project certificate.jpeg" alt="Birmingham Project Certificate">
+                            <div class="download-overlay">
+                                <i class="fas fa-download"></i>
+                                <span>Click to Download</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3>Birmingham Project Certificate</h3>
+                        <p>Successfully completed the Birmingham Project, demonstrating exceptional skills in AI and Computer Science applications.</p>
+                        <div class="project-tech">
+                            <span>Artificial Intelligence</span>
+                            <span>Team Collaboration</span>
+                            <span>Project Management</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/in/ramy-mekhzer-51b411275/" class="btn small-btn">View on LinkedIn</a>
+                            <a href="img/Birmingham project certificate.jpeg" download="Birmingham Project Certificate" class="btn small-btn">Download Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project upload form -->
+                <div class="project-card upload-card">
+                    <div class="upload-container">
+                        <i class="fas fa-plus-circle"></i>
+                        <h3>Add New Project</h3>
+                        <p>Upload details about your latest project</p>
+                        <a href="#contact" class="btn small-btn">Contact to Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>mekhzerramy@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+447519652704</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Birmingham, UK</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Ramy Mekhzer. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
