@@ -317,7 +317,7 @@
                         <input type="hidden" name="_captcha" value="false">
                         
                         <!-- Success page -->
-                        <input type="hidden" name="_next" value="thanks.html">
+                        <input type="hidden" name="_next" value="https://ramy3077.github.io/Portfolio-project/thanks.html">
                         
                         <div class="form-group">
                             <label for="name">Name</label>
@@ -355,5 +355,18 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Set the replyto field based on the user's email input
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailInput = document.getElementById('email');
+            const replytoInput = document.querySelector('input[name="_replyto"]');
+            
+            if (emailInput && replytoInput) {
+                emailInput.addEventListener('input', function() {
+                    replytoInput.value = this.value;
+                });
+            }
+        });
+    </script>
 </body>
 </html>
