@@ -39,3 +39,6 @@ build/
 *.swp
 *.swo
 *~ 
+
+# Project specific files
+obj 
