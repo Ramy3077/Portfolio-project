@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('theme', newTheme);
         themeIcon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     });
+
     // Mobile Navigation Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -72,62 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // Form submission handling
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-            
-            // Simple form validation
-            if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-                alert('Please fill in all fields');
-                return;
-            }
-
-            // Show loading state
-            const submitButton = contactForm.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton.textContent;
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-            
-            try {
-                // Send email using EmailJS
-                const response = await emailjs.send(
-                    "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-                    "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
-                    {
-                        from_name: formData.name,
-                        from_email: formData.email,
-                        subject: formData.subject,
-                        message: formData.message,
-                    }
-                );
-
-                if (response.status === 200) {
-                    alert('Thank you for your message! I will get back to you soon.');
-                    contactForm.reset();
-                } else {
-                    throw new Error('Failed to send message');
-                }
-            } catch (error) {
-                alert('Sorry, there was an error sending your message. Please try again later.');
-                console.error('Error:', error);
-            } finally {
-                // Reset button state
-                submitButton.textContent = originalButtonText;
-                submitButton.disabled = false;
-            }
-        });
-    }
 
     // Add animation to elements when they come into view
     const animateOnScroll = function() {
