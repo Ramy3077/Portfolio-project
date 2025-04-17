@@ -411,6 +411,31 @@ nav {
     transform: scale(1.05);
 }
 
+.download-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.download-overlay i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.project-image:hover .download-overlay {
+    opacity: 1;
+}
+
 .project-info {
     padding: 20px;
 }
@@ -535,14 +560,28 @@ nav {
 /* Contact Section */
 .contact-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 2fr;
     gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding-right: 30px;
+    border-right: 1px solid var(--border-color);
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .contact-item {
@@ -559,12 +598,6 @@ nav {
 .contact-item h3 {
     margin-bottom: 5px;
     font-size: 1.2rem;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .form-group {
